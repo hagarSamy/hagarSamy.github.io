@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'klein';
+    src: url('/fonts/klein/Klein-Bold.ttf') format('woff2');  /* Older browsers */
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futura';
+    src: url('/fonts/futura/futura\ medium\ bt.ttf') format('woff2');  /* Older browsers */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futuraBold';
+    src: url('/fonts/futura/unicode.futurab.ttf') format('woff2');  /* Older browsers */
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 5px;
+    background-color: #ffffff;
+    border-bottom: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.navbar .logo img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.navbar .logo span.pergo {
+    font-family: klein;
+    color: #636768;
+    font-size: xx-large;
+}
+.navbar .logo span .luxus {
+    font-family: klein;
+    color: #00BCC3;
+}
+
+.navbar .get-started {
+    background-color: #009399;
+    font-family: futura;
+    color: white;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 60px;
+    margin-left: auto; 
+    gap:10px;
+}
+
+.intro2-page {
+    background-color: white;
+    font-family: futuraBold;
+    padding: 50px 20px;
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 116px);
+    overflow: hidden
+}
+
+.intro2-page .foreground-text {
+    font-size: 100px;
+    color: #00BCC3;
+    z-index: 12;
+    text-align: left; 
+    position: absolute;
+    padding-left: 250px;
+    outline: none;
+    top: 15.5%;
+    line-height: 0.7;
+}     
+    
+.intro2-page .we {
+    display: inline-block;
+}
+
+.intro2-page .listen {
+    display: block;
+    margin-top: 20px;
+}
+
+.intro2-page .design {
+    display: block;
+    margin-top: 20px;
+}
+.intro2-page .deliver {
+    display: block;
+    margin-top: 20px;
+}
+.intro2-page .background-text {
+    font-size: 150px;
+    letter-spacing: 5px;
+    color: #00bdc31f;
+    position: absolute;
+    left: 0; 
+    right: 0;
+}
+
+.intro-text {
+    font-family: futura;
+    color: #636768;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+}
+
+.intro-text span {
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    top: -222px;
+    right: 120px;;
+}
+.intro-text .link {
+    font-size: 38px;
+    font-weight: 500;
+    position: absolute;
+    top: -120px;
+    right: 225px;;
+    letter-spacing: 6.46px;
+    color: inherit;
+}
+.link:hover {
+    color: #00BCC3;
+}
+
+/* .images-container {
+    padding: 0;
+    margin: 0;
+    position: relative;
+} */
+.images-container .bImg {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 870px;
+    height: 316px;
+    flex-shrink: 0;
+    z-index: 0;
+    bottom: 0;
+    /* padding: 0;
+    margin: 0; */
+    /* object-fit: cover; */
+}
+.images-container .rImg {
+    position: absolute;
+    top: 57%;
+    width: 200px;
+    height: 225px;
+    flex-shrink: 0;
+    z-index: 0;
+    right: 0;
+    bottom: 23;
+}
+/* styling the explore arrow */
+.link i {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.arrow-circles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    /* gap: 19px; */
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white; /* Arrow color */
+    font-size: 20px;
+    position: absolute
+}
+/* Style for left arrow circle */
+.down-circle {position: relative;
+    transform: rotate(0deg); /* Rotate to show left arrow */
+    background-color: #00BCC3;
+    top: 560%;
+    right: 22%;
+} 
+
+/* Style for right arrow circle */
+.up-circle {
+    transform: rotate(0deg); /* Rotate to show right arrow */
+    background-color: #636768;
+    top: 420%;
+    right: 22%;
+}
+
+
