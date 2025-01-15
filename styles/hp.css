@@ -246,9 +246,9 @@ p {
 }
 
 .image-containerUs {
-    max-width: 40%; /* Image container takes 40% of the space */
+    max-width: 40%;
     display: flex;
-    justify-content: flex-end; /* Align the image to the right */
+    justify-content: flex-end;
     height: 100%;
 }
 
@@ -274,7 +274,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 6px; /* Space between images */
+    gap: 6px;
     max-width: calc(100% - 200px);
     width: 100%;
     position: relative;
@@ -309,8 +309,8 @@ img {
 
 .images-slide .image-s-container:nth-child(1) img,
 .images-slide .image-s-container:nth-child(2) img {
-    width: 250px; /* Set the width for the first two images */
-    height: 420px; /* Set the height for the first two images */
+    width: 250px;
+    height: 420px;
 }
 
 .images-slide .image-s-container:nth-child(3) img {
@@ -338,14 +338,14 @@ img {
 
 .images-wrapper {
     display: flex;
-    flex-direction: column; /* Stack images and line below */
+    flex-direction: column;
     align-items: flex-start;
 }
 
 /* Style for images */
 .images-slide {
     display: flex;
-    gap: 10px; /* Space between images */
+    gap: 10px;
     align-items: flex-start;
 }
 
@@ -387,7 +387,7 @@ img {
 /* Ensure images retain their size */
 .image-s-container img {
     width: auto;
-    height: 420px; /* Maintain consistent height */
+    height: 420px;
     object-fit: cover;
 }
 
@@ -398,7 +398,7 @@ img {
     padding: 30px 20px;
     width: 1510px;
     height: 575px;
-    text-align: center; /* Center align text */
+    text-align: center;
 }
 .who-trusts-us-section {
     color: var(--Color, #0B8997);
@@ -480,7 +480,7 @@ img {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Ensures responsiveness on small screens */
+    flex-wrap: wrap;
 }
 
 /* Each column */
@@ -495,7 +495,7 @@ img {
 }
 
 .column:hover {
-    transform: translateY(-10px); /* Lift the column on hover */
+    transform: translateY(-10px);
 }
 
 /* Image inside each column */
@@ -509,7 +509,7 @@ img {
 .svg-icon {
     width: 92.952px;
     height: 92.952px;
-    border-radius: 46.4759px; /* Matches the rx value of the SVG rect */
+    border-radius: 46.4759px;
     display: inline-block;
     object-fit: contain;
     margin-top: -1px;;
@@ -607,7 +607,8 @@ img {
 }
 .view-btn:hover {
     color: #000;
-    border-color: #00BCC3;    background-color: #00BCC3;
+    border-color: #00BCC3;    
+    background-color: #00BCC3;
 }
 
 .back-to-top {
@@ -644,9 +645,9 @@ img {
     background-color: rgba(20, 18, 18, 0.932);
 }
 .sepspace {
-    width: 100%;  /* Ensure the container takes up full width */
-    margin: 0;  /* Remove any default margins */
-    padding: 0;  /* Optional: remove padding if needed */
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: rgba(20, 18, 18, 0.932);
     padding-top: 10px;
     padding-bottom: 60px;;
