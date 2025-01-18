@@ -165,6 +165,7 @@ body {
   padding-right: 20px;
   justify-content: space-between;
   flex-direction: column;
+  margin-left: 30px;
 }
 h1 {
   font-family: futura;
@@ -217,14 +218,14 @@ p {
   display: inline-block;
   margin-bottom: 30px;
   margin-right: auto;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-top: 31px;
 }
 .statistics {
   display: flex;
   justify-content: flex-start;
   margin-top: 0px;
-  margin-left: 10px;
+  margin-left: 30px;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -271,27 +272,28 @@ p {
 .label {
   color: var(--Color-3, #636768);
   font-family: futura;
-  font-size: 17.15px;
+  font-size: 18.25px;
   font-style: normal;
   font-weight: 500;
   line-height: 20.182px; /* 117.679% */
   letter-spacing: 0.343px;
+  margin-top: 20px;
 }
 
 .image-containerUs {
   /* max-width: 40%; */
-  width: 732px;
+  width: 672px;
   height: 641px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
+  margin-right: 110px;
 }
 
 img {
   display: block;
   width: 150%;
   height: auto;
-  margin-right: 80px;
   object-fit: cover;
   margin-top: 100px;
 }
