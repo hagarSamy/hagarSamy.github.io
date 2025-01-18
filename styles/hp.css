@@ -33,7 +33,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* overflow-x: hidden; */
 }
 .home-page {
   background-image: url("/images/15.png");
@@ -89,7 +88,7 @@ body {
 .navbar .logo span.pergo {
   font-family: klein;
   color: #ffffff;
-  font-size: xx-large;
+  font-size: 35px;
 }
 .navbar .logo span .luxus {
   font-family: klein;
@@ -100,6 +99,7 @@ body {
   display: flex;
   gap: 30px; /* Space between links */
   font-family: kleinText;
+  font-size: 22px;
   width: 91px;
   height: 32px;
   flex-shrink: 0;
@@ -122,6 +122,7 @@ body {
 }
 
 .navbar .navbar-icon svg {
+  flex-shrink: 0;
   width: 44.863px;
   height: 29.829px;
   cursor: pointer;
@@ -150,7 +151,9 @@ body {
   margin-left: 0px;
   text-align: justify;
 }
-
+.about-us-section {
+  padding-left: 107px;
+}
 .about-us .block p {
   line-height: 33.25px; /* Improve readability */
 }
@@ -205,30 +208,30 @@ p {
 .read-more-btn {
   background-color: #00bcc3;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 50.6px;
   border: none;
   border-radius: 36.889px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 23.056px;
   text-decoration: none;
   display: inline-block;
   margin-bottom: 30px;
   margin-right: auto;
-  margin-left: 80px;
+  margin-left: 10px;
   margin-top: 31px;
 }
 .statistics {
   display: flex;
   justify-content: flex-start;
   margin-top: 0px;
-  margin-left: 80px;
+  margin-left: 10px;
   gap: 15px;
   margin-bottom: 20px;
 }
 
 .stat:not(:last-child) {
-  border-right: 2px solid #009399;
-  padding-right: 15px;
+  border-right: 0.5px solid #009399;
+  padding-right: 62.48px;
 }
 .stat {
   display: flex;
@@ -244,10 +247,10 @@ p {
 }
 
 .plus-sign {
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
-  top: 1px;
-  right: -10px;
+  top: -25px;
+  right: -25px;
   font-weight: extra-bold;
   color: #009399;
 }
@@ -255,13 +258,16 @@ p {
 .number {
   color: #009399;
   font-family: "General Sans";
-  font-size: 40px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 600;
   line-height: 58.567px; /* 73.209% */
   letter-spacing: 0.8px;
 }
-
+.statistics .stat:nth-child(2),
+.statistics .stat:nth-child(3) {
+  margin-left: 60.28px;
+}
 .label {
   color: var(--Color-3, #636768);
   font-family: futura;
@@ -274,11 +280,11 @@ p {
 
 .image-containerUs {
   /* max-width: 40%; */
+  width: 732px;
+  height: 641px;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
-  width: 672px;
-  height: 605px;
-  flex-shrink: 0;
 }
 
 img {
