@@ -161,7 +161,8 @@ body {
 .who-trust-us-section,
 .why-us-section,
 .our-parts-section {
-  padding-left: 107px;
+  margin-left: 110px;
+  margin-right: 110px;
 }
 .block p {
   line-height: 33.25px; /* Improve readability */
@@ -177,6 +178,9 @@ body {
   justify-content: space-between;
   flex-direction: column;
   margin-left: 30px;
+}
+.textUs  h1 {
+  letter-spacing: 10px;
 }
 h1 {
   font-family: futura;
