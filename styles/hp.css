@@ -136,7 +136,10 @@ body {
 /* styling the about-us section */
 
 .about-us,
-.what-we-offer {
+.what-we-offer,
+.who-trust-us,
+.why-pergoluxus,
+.solution-partners {
   background-color: #ffffff;
   padding: 50px 20px;
   height: auto;
@@ -146,20 +149,27 @@ body {
   justify-content: space-between;
   align-items: stretch;
 }
-.about-us .block {
+.about-us .block,
+.what-we-offer .block {
   max-width: 504px;
   margin-left: 0px;
   text-align: justify;
 }
-.about-us-section {
+.about-us-section,
+.what-we-offer-section,
+.who-trust-us-section,
+.why-us-section,
+.our-parts-section {
   padding-left: 107px;
 }
-.about-us .block p {
+.block p {
   line-height: 33.25px; /* Improve readability */
 }
 .textUs,
 .textOffer,
-.textTrust {
+.textTrust,
+.textWhy,
+.textParts {
   /* width: 509px; */
   margin-left: 20px;
   padding-right: 20px;
@@ -311,13 +321,14 @@ img {
 
 .images-slide {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 40px;
+  width: 100%;
+  /* align-items: flex-start;
   max-width: 100%;
   overflow-x: auto;
   margin-right: 0;
-  padding-right: 0;
+  padding-right: 0; */
 }
 
 .view-all-link {
@@ -339,16 +350,11 @@ img {
   align-items: center;
   text-align: center;
   margin: 0;
-  /* position: relative;
-  max-width: 93%;
-  margin-right: 0;
-  flex-shrink: 0; */
 }
 
 .image-s-container img {
   display: block;
   object-fit: cover;
-  width: auto;
   max-width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -363,7 +369,7 @@ img {
 }
 .images-slide .image-s-container:nth-child(1) img,
 .images-slide .image-s-container:nth-child(2) img {
-  width: 270px;
+  width: 340px;
   height: 420px;
 }
 
@@ -380,28 +386,23 @@ img {
 
 .image-s-description {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   color: #00bcc3;
-  line-height: 1.6;
+  line-height: normal;
   font-weight: 500;
 }
 
 /* Maintain row alignment between text and images */
-.what-we-offer-section {
+.what-we-offer-section,
+.who-trust-us,
+.why-us-section,
+.solution-partners {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  margin-right: 0;
-  padding: 0;
-  overflow: hidden;
-  max-width: 100%;
 }
-
 .images-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 /* Style for line and arrows */
@@ -449,7 +450,8 @@ img {
   text-align: left;
   position: relative;
 }
-.who-trusts-us-section {
+.who-trusts-us-section,
+.our-parts-section {
   color: var(--Color, #0b8997);
   font-family: futura;
   font-size: 25px;
@@ -460,8 +462,9 @@ img {
   text-transform: uppercase;
   margin-left: 20px;
 }
-.our-clients h2,
-.why-us-section h2 {
+.textTrust h2,
+.why-us-section h2,
+.textParts h2 {
   color: var(--141414-Black, #141414);
   font-family: futura;
   font-size: 53px;
@@ -471,12 +474,9 @@ img {
   letter-spacing: 2.12px;
   text-transform: capitalize;
 }
-/* .why-us-section h2 {
-  margin-top: -10px;
+.textParts {
+  white-space: nowrap;
 }
-.whyUs h1 {
-  margin-bottom: 20px;
-} */
 .our-clients {
   display: flex;
   justify-content: flex-start;
@@ -485,48 +485,54 @@ img {
 }
 
 /* Projects Line */
-.projs-container {
+.projs-container,
+.parts-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 80px;
   position: relative;
+  margin-top: 300px;
+  left: -250px;
 }
 
-.projs {
+.projs,
+.parts {
   display: flex;
-  gap: 15px;
+  gap: 45px;
   overflow: hidden;
-  max-width: 90%;
+  max-width: 100%;
 }
-
-.projs img {
+.projs-container img,
+.parts-container img {
+  /* If icons are images */
+  margin-right: 10px; /* Add space to the right of each icon */
+}
+.projs img,
+.parts img {
   height: 60px;
   transition: transform 0.3s ease;
 }
 
-.projs img:hover {
+.projs img:hover,
+.parts img:hover {
   transform: scale(1.1);
 }
 
-.projs-container svg {
+.projs-container svg,
+.parts-container svg {
   position: relative;
-  top: 50px;
-  right: 15px;
+  top: 80px;
+  right: 35px;
 }
 
 /* why pergoluxus styling */
-
-.why-pergoluxus {
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.932);
-}
 
 /* Container for columns */
 .columns-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
@@ -584,16 +590,27 @@ img {
 .column-image {
   padding-left: 50px;
 }
-.why-us-section {
+/* .why-us-section {
   display: flex;
   justify-content: flex-start;
-}
+} */
 .our-clients svg,
 .why-us-section svg {
   margin-top: 120px;
-  margin-left: -170px;
+  margin-left: 183px;
 }
-
+.textTrust svg {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.textWhy svg {
+  margin-top: 20px;
+  margin-left: 320px;
+}
+.textParts svg {
+  margin-top: 20px;
+  margin-left: 110px;
+}
 /* explore section styling */
 .explore-section {
   position: relative;
@@ -670,7 +687,7 @@ img {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   position: relative;
-  margin-left: 640px;
+  margin-left: 870.48px;
   margin-top: 100px;
   width: 63.551px;
   height: 57.497px;
@@ -726,7 +743,7 @@ img {
 }
 
 /* Left section with text */
-.footer-left h2 {
+/* .footer-left h2 {
   color: #474a4a;
   font-family: kleinText;
   font-size: 33px;
@@ -741,10 +758,10 @@ img {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 0.6px;
   margin-top: -30px;
-}
+} */
 
 /* Footer Links */
 .footer-links {
@@ -765,6 +782,7 @@ img {
   font-size: 16px;
   transition: color 0.3s;
   margin-top: 40px;
+  margin-right: 35px;
 }
 
 .footer-links a:hover {
@@ -785,13 +803,13 @@ img {
   width: 100%;
   /* max-width: 1512px; */
   height: 65px;
-  margin: -40px auto 200px auto;
+  margin: -40px auto 400px auto;
   background: #0fbcc3;
 }
 
 .footer-left {
-  width: 159px;
-  height: 196px;
+  width: 158.859px;
+  height: 171.029px;
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
@@ -801,4 +819,5 @@ img {
   max-width: 100%;
   height: auto;
   margin-top: -20px;
+  margin-left: 80px;
 }
