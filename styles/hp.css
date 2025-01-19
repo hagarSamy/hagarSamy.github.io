@@ -45,7 +45,7 @@ body {
 
 .navbar {
   display: flex;
-  padding: 0px 20px;
+  padding: 48px 110px 48px 110px;
   justify-content: space-between;
   align-items: center;
   border-bottom: none;
@@ -58,6 +58,7 @@ body {
 }
 .navbar.scrolled {
   background-color: #fffefe;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar.scrolled .nav-links a {
@@ -118,7 +119,7 @@ body {
 .navbar .navbar-icon {
   margin-top: 20px;
   margin-left: 10px;
-  margin-right: 110px;
+  margin-right: 220px;
 }
 
 .navbar .navbar-icon svg {
@@ -307,7 +308,7 @@ img {
   object-fit: cover;
   margin-top: 100px;
 }
-/* 
+/*
 .right-image {
   width: 115%;
   height: auto;
