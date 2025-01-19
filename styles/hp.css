@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @font-face {
   font-family: "klein";
   src: url("/fonts/klein/Klein-Bold.ttf") format("truetype"); /* Older browsers */
@@ -243,6 +245,7 @@ p {
   margin-left: 30px;
   gap: 15px;
   margin-bottom: 20px;
+  font-family: "DM Sans", serif;
 }
 
 .stat:not(:last-child) {
@@ -273,7 +276,7 @@ p {
 
 .number {
   color: #009399;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 600;
